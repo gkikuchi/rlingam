@@ -1,4 +1,4 @@
-# lingam: R implementation of LiNGAM algorithms
+# rlingam: R implementation of LiNGAM algorithms
 Under Development
 
 ## Implemented Algorithms
