@@ -1,0 +1,18 @@
+Package: rlingam
+Title: R Implementation of LiNGAM algorithms
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Genta",
+           family = "Kikuchi",
+           role = c("aut", "cre"),
+           email = "genta.kik@gmail.com")
+Description: R implementation of LiNGAM algorithms based on Python implementation (The LiNGAM Project: https://sites.google.com/site/sshimizu06/lingam)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: 
+    lars,
+    DiagrammeR,
+    glmnet
