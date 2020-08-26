@@ -7,7 +7,7 @@ Under Development
 ## Not Yet Implemented
 - Other algorithms
 - Bootstrapping
-- Utils (to plot graphs based on adjacency matrix)
+- etc
 
 ## Install
 ```r
