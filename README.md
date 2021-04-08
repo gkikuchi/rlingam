@@ -1,13 +1,8 @@
 # rlingam: R implementation of LiNGAM algorithms
-Under Development
 
 ## Implemented Algorithms
-- Direct LiNGAM
-
-## Not Yet Implemented
-- Other algorithms
-- Bootstrapping
-- etc
+- ICALiNGAM
+- DirectLiNGAM
 
 ## Install
 ```r
@@ -18,8 +13,14 @@ remotes::install_github("gkikuchi/rlingam")
 ```r
 library(rlingam)
 
-X <- rlingam::gen_dummy_data(random_state = 10)
-mdl <- rlingam::DirectLiNGAM$new()
+X <- gen_dummy_data(random_state = 10)
+
+# icalingam
+mdl <- ICALiNGAM$new()
+mdl$fit(X)
+
+# directlingam
+mdl <- DirectLiNGAM$new()
 mdl$fit(X)
 
 print(mdl$causal_order)

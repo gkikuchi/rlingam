@@ -2,7 +2,10 @@
 
 export(BaseLiNGAM)
 export(DirectLiNGAM)
+export(ICALiNGAM)
 export(gen_dummy_data)
 export(plot_adjacency_mat)
 import(DiagrammeR)
+importFrom(clue,solve_LSAP)
+importFrom(fastICA,fastICA)
 importFrom(lars,lars)

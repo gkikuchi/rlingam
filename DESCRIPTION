@@ -1,6 +1,6 @@
 Package: rlingam
 Title: R Implementation of LiNGAM algorithms
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Genta",
            family = "Kikuchi",
@@ -15,4 +15,6 @@ RoxygenNote: 7.1.0
 Imports: 
     lars,
     DiagrammeR,
-    glmnet
+    glmnet,
+    clue,
+    fastICA
