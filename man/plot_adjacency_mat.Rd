@@ -4,10 +4,20 @@
 \alias{plot_adjacency_mat}
 \title{Visualize graph based on adjacency matrix}
 \usage{
-plot_adjacency_mat(adj_mat, node_labels = NULL, round_digit = 2)
+plot_adjacency_mat(
+  adj_mat,
+  title = NULL,
+  draw_edge_labels = TRUE,
+  node_labels = NULL,
+  round_digit = 2
+)
 }
 \arguments{
 \item{adj_mat}{(numerical matrix) from: col -> to: row}
+
+\item{title}{(character) plot title}
+
+\item{draw_edge_labels}{(TRUE/FALSE) if FALSE, remove edge labels}
 
 \item{node_labels}{(numeric or character vector) node labels}
 
