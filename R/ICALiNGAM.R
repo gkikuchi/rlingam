@@ -73,13 +73,12 @@ ICALiNGAM <- R6::R6Class("ICALiNGAM", inherit = BaseLiNGAM,
 
             # set to zero until DAG is obtained
             for (i in pos_vec[(initial_zero_num + 1):length(pos_vec)]) {
-                B[i] <- 0
-
                 # if B is not DAG, null is returned
                 causal_order <- self$search_causal_order(B)
                 if (!is.null(causal_order)) {
                     break
                 }
+                B[i] <- 0
             }
             return(causal_order)
         },
